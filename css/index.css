@@ -1,3 +1,279 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 920px;
+	margin: auto;
+}
+
+/* Header styles */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 85px;
+}
+
+nav .nav-item {
+	padding: 0 30px;
+	text-decoration: none;
+	color: gray;
+	font-size: 14px;
+}
+
+img.logo {
+	max-height: 36px;
+	max-width: 183px;
+}
+
+/* Intro Section styles */
+.intro {
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 70px;
+	border-bottom: 1px solid black;
+}
+
+.intro div h1 {
+	font-size: 75px;
+	text-align: center;
+	margin: 20px 0 0 20px;
+}
+
+.intro div {
+	text-align: center;
+	width: calc(50% - 30px);
+}
+
+.intro div button {
+	background: white;
+	border: 1px solid black;
+	padding: 10px 40px;
+	margin-top: 20px;
+}
+
+/* Section One Style */
+.section-one {
+	display: flex;
+}
+
+.section-one div {
+	width: calc(50% - 10px);
+	padding: 40px 10px;
+}
+
+/* Middle Image */
+.main-content .middle-img {
+	text-align: center;
+}
+
+/* Section Two Style */
+.section-two {
+	display: flex;
+	border-bottom: 1px solid black;
+}
+
+.section-two div {
+	width: calc(33% - 10px);
+	padding: 40px 10px 50px 10px;
+}
 
 
+/* Footer Style */
+footer h3{
+	padding-top: 30px;
+}
+
+footer p {
+	margin: 30px auto 50px;
+	text-align: center;
+	font-size: 13px;
+}
+
+
+
+
+/* ............................................................. */
+/* Services Page */
+/* ............................................................. */
+
+/* Intro */
+.services-intro div {
+	text-align: center;
+}
+
+.services-intro h2, .services-intro p {
+	padding: 0px 16px;
+}
+
+.services-intro h2 {
+	margin-top: 20px;
+	font-size: 25px;
+}
+
+.services-intro {
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+}
+
+/* Services */
+
+.services-list {
+	margin: 30px 0;
+	height: 780px;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+	border-bottom: 2px solid black;
+	padding-bottom: 30px;
+}
+
+.services-list .service{
+	padding: 20px;
+	width: calc(50% - 20px);
+	background: #f4f3f4;
+	border: 1px solid black;
+}
+
+.services-list .service p{
+	margin: 10px 0 25px 0;
+}
+
+.service button {
+	padding: 7px 20px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 170px;
+}
+
+
+/* Outro */
+
+section.outro {
+	display: flex;
+}
+
+ul {
+	display: block;
+	list-style-type: disc;
+	margin-top: 1em;
+	margin-bottom: 1 em;
+	line-height: 30px;
+	padding-left: 20px;
+  }
+
+/* ............................................................. */
+/* Vision Page */
+/* ............................................................. */
+
+/* Intro */
+.vision-intro div {
+	text-align: center;
+}
+
+.vision-intro h2, .vision-intro p {
+	padding: 0px 16px;
+}
+
+.vision-intro h2 {
+	margin-top: 20px;
+	font-size: 25px;
+}
+
+.vision-intro {
+	/* border-bottom: 1px solid black; */
+	padding-bottom: 30px;
+}
+
+/* Sections */
+
+.vision {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+section.vision div {
+	height: 200px;
+	width: calc(50% - 20px);
+}
+
+section.vision:nth-child(odd) {
+	background: #f4f3f4;
+}
+
+section.vision {
+	border-top: 1px solid black;
+	/* border-top: 1px solid black; */
+}
+
+.vision div {
+	align-self: center;
+}
