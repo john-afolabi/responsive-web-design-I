@@ -127,7 +127,7 @@ nav .nav-item {
 
 @media (max-width: 500px) {
     header {
-        margin-top: 40px;
+        margin-top: 4px;
         height: unset;
     }
 
@@ -135,14 +135,16 @@ nav .nav-item {
         display: flex;
         flex-flow: column;
         justify-content: center;
+        margin-top: 18px;
     }
 
     nav .nav-item {
         display: block;
         border-bottom: 1px solid black;
-        padding: 30px 30px;
+        padding: 21px 30px;
         width: 400px;
         text-align: center;
+        font-size: 18px;
     }
 
     nav .nav-item:first-of-type {
@@ -243,6 +245,12 @@ nav .nav-item {
 
 .main-content .middle-img img {
 	width: 100%;
+}
+
+@media (max-width: 500px) {
+    .main-content .middle-img img {
+        margin: 25px auto;
+    }
 }
 
 
