@@ -117,6 +117,11 @@ nav .nav-item {
     nav {
         margin-top: 30px;
     }
+
+    nav .nav-item {
+        font-size: 16px;
+        padding: 0 30px;
+    }
 }
 
 
@@ -149,7 +154,7 @@ nav .nav-item {
 	display: flex;
 	justify-content: space-evenly;
 	padding-bottom: 70px;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
 .intro div h1 {
@@ -204,12 +209,13 @@ nav .nav-item {
 
 /* Section One Style */
 .section-one {
-	display: flex;
+    display: flex;
+    justify-content: space-between;
 }
 
 
 .section-one div {
-	width: calc(50% - 10px);
+	width: calc(50% - 15px);
 	padding: 40px 0px;
 }
 
@@ -239,7 +245,7 @@ nav .nav-item {
 /* Section Two Style */
 .section-two {
 	display: flex;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
 .section-two div {
@@ -291,7 +297,7 @@ footer p {
 }
 
 .services-intro {
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 	padding-bottom: 30px;
 }
 
