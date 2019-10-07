@@ -66,18 +66,21 @@ h1, h2, h3, h4, h5 {
 
 .main-container {
     max-width: 920px;
-	margin: auto;
+    margin: auto;
+    padding: 20px;
 }
 
 @media (max-width: 800px) {
     .main-container {
         max-width: 800px;
+        padding: 20px;
     }
 }
 
 @media (max-width: 500px) {
     .main-container {
         max-width: 500px;
+        padding: 20px;
     }
 }
 
@@ -210,8 +213,13 @@ nav .nav-item {
 }
 
 /* Middle Image */
+
 .main-content .middle-img {
 	text-align: center;
+}
+
+.main-content .middle-img img {
+	width: 100%;
 }
 
 /* Section Two Style */
