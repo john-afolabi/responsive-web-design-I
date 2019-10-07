@@ -156,6 +156,38 @@ nav .nav-item {
 	margin-top: 20px;
 }
 
+
+@media (max-width: 800px) {
+    .intro {
+        padding-top: 50px;
+        display: block;
+    }
+
+    .intro div{
+        width: unset;
+    }
+
+    .intro div img {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .intro {
+        padding-top: 50px;
+        display: block;
+    }
+
+    .intro div{
+        width: unset;
+    }
+
+    .intro div img {
+        display: none;
+    }
+}
+
+
 /* Section One Style */
 .section-one {
 	display: flex;
