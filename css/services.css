@@ -67,20 +67,20 @@ h1, h2, h3, h4, h5 {
 .main-container {
     max-width: 920px;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
 }
 
 @media (max-width: 800px) {
     .main-container {
         max-width: 800px;
-        padding: 10px;
+        padding: 20px;
     }
 }
 
 @media (max-width: 500px) {
     .main-container {
         max-width: 500px;
-        padding: 10px;
+        padding: 20px;
     }
 }
 
@@ -153,131 +153,105 @@ nav .nav-item {
 }
 
 
+/* Intro */
 
-/* Intro Section styles */
-.intro {
-	padding-top: 50px;
-	display: flex;
-	justify-content: space-evenly;
-	padding-bottom: 70px;
+.services-intro .services-header-img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.services-intro h2, .services-intro p {
+	padding: 0px 16px;
+}
+
+.services-intro h2 {
+	margin-top: 20px;
+	font-size: 25px;
+}
+
+.services-intro {
 	border-bottom: 2px solid black;
+	padding-bottom: 30px;
 }
-
-.intro div h1 {
-	font-size: 75px;
-	text-align: center;
-	margin: 20px 0 0 20px;
-}
-
-.intro div {
-	text-align: center;
-	width: calc(50% - 30px);
-}
-
-.intro div button {
-	background: white;
-	border: 1px solid black;
-	padding: 7px 47px;
-    margin-top: 20px;
-    font-size: 15px;
-}
-
 
 @media (max-width: 800px) {
-    .intro {
-        padding-top: 50px;
-        display: block;
-    }
-
-    .intro div{
-        width: unset;
-    }
-
-    .intro div img {
-        display: none;
-    }
-}
-
-@media (max-width: 500px) {
-    .intro {
-        padding-top: 25px;
-        display: block;
-    }
-
-    .intro div{
-        width: unset;
-    }
-
-    .intro div img {
-        display: none;
+    .services-intro .services-header-img {
+        margin-top: 30px;
     }
 }
 
 
-/* Section One Style */
-.section-one {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 38px;
-}
+/* Services */
 
-
-.section-one div {
-	width: calc(50% - 15px);
-	padding: 40px 0px;
-}
-
-@media (max-width: 500px) {
-    .section-one {
-        flex-flow: column;
-    }
-    
-    .section-one div {
-        width: unset;
-        padding: 28px 0px;
-    }
-}
-
-
-/* Middle Image */
-
-.main-content .middle-img {
-	text-align: center;
-}
-
-.main-content .middle-img img {
-	width: 100%;
-}
-
-@media (max-width: 500px) {
-    .main-content .middle-img img {
-        margin: 25px auto 5px;
-    }
-}
-
-
-/* Section Two Style */
-.section-two {
+.services-list {
+	/* height: 780px; */
 	display: flex;
-    border-bottom: 2px solid black;
-    margin-bottom: 15px
+	flex-flow: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+	border-bottom: 2px solid black;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-.section-two div {
-	width: calc(33% - 10px);
-	padding: 40px 10px 50px 10px;
+.services-list .service{
+	padding: 20px;
+	width: calc(50% - 20px);
+	background: #f4f3f4;
+    border: 1px solid black;
+    margin-top: 30px;
 }
+
+
+.services-list .service p{
+	margin: 10px 0 25px 0;
+}
+
+.service button {
+	padding: 7px 20px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 170px;
+}
+
 
 @media (max-width: 500px) {
-    .section-two {
-        flex-flow: column;
+    .services-list {
+        flex-direction: column;
     }
-    
-    .section-two div {
-        width: unset;
-        padding: 30px 0 40px;
+
+    .services-list .service{
+        width: 95%;
     }
 }
+
+/* Outro */
+
+section.outro {
+	display: flex;
+}
+
+ul {
+	display: block;
+	list-style-type: disc;
+	margin-top: 1em;
+	margin-bottom: 1 em;
+	line-height: 30px;
+	padding-left: 20px;
+  }
+
+@media (max-width: 500px) {
+    section.outro {
+        flex-direction: column-reverse;
+    }
+
+    section.outro .outro-img img{
+        width: 98%;
+        margin-bottom: 30px;
+    }
+}
+
 
 /* Footer Style */
 footer h3{
@@ -285,55 +259,7 @@ footer h3{
 }
 
 footer p {
-	margin: 32px auto 50px;
+	margin: 30px auto 50px;
 	text-align: center;
-	font-size: 16px;
-}
-
-/* ............................................................. */
-/* Vision Page */
-/* ............................................................. */
-
-/* Intro */
-.vision-intro div {
-	text-align: center;
-}
-
-.vision-intro h2, .vision-intro p {
-	padding: 0px 16px;
-}
-
-.vision-intro h2 {
-	margin-top: 20px;
-	font-size: 25px;
-}
-
-.vision-intro {
-	/* border-bottom: 1px solid black; */
-	padding-bottom: 30px;
-}
-
-/* Sections */
-
-.vision {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-section.vision div {
-	height: 200px;
-	width: calc(50% - 20px);
-}
-
-section.vision:nth-child(odd) {
-	background: #f4f3f4;
-}
-
-section.vision {
-	border-top: 1px solid black;
-	/* border-top: 1px solid black; */
-}
-
-.vision div {
-	align-self: center;
+	font-size: 13px;
 }
